@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jshthornton/sonoport-fet#readme",
   "devDependencies": {
-
+    "grunt": "^0.4.5",
+    "karma": "^0.13.2"
   }
 }
