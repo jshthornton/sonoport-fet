@@ -1,3 +1,5 @@
+var webpackConf = require('./webpack.conf');
+
 module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
@@ -38,6 +40,16 @@ module.exports = function(grunt) {
         flatten: true,
         filter: 'isFile',
       },
+    },
+
+    webpack: {
+      default: webpackConf
+    },
+
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js'
+      }
     }
   });
 
@@ -45,4 +57,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-webpack');
+  grunt.loadNpmTasks('grunt-karma');
 };
