@@ -1,0 +1,22 @@
+{
+  "name": "sonoport-fet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jshthornton/sonoport-fet.git"
+  },
+  "author": "Joshua Thornton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jshthornton/sonoport-fet/issues"
+  },
+  "homepage": "https://github.com/jshthornton/sonoport-fet#readme",
+  "devDependencies": {
+
+  }
+}
