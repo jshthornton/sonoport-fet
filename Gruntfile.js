@@ -27,10 +27,22 @@ module.exports = function(grunt) {
         files: ['src/sass/**/*'],
         tasks: ['sass']
       }
+    },
+
+    copy: {
+      html: {
+        expand: true,
+        cwd: 'src/templates',
+        src: '**',
+        dest: 'dist/templates',
+        flatten: true,
+        filter: 'isFile',
+      },
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 };
